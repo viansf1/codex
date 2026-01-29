@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Износостойкие листы — Инжиниринг и проекты</title>
+    <meta
+      name="description"
+      content="Прямой поставщик износостойких листов в РФ. Быстрая доставка, позиции в наличии и индивидуальные условия." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-grid">
+        <div class="brand">
+          <img
+            class="brand__logo"
+            src="https://static.tildacdn.com/tild3731-6266-4539-b265-613965383135/LogoEP_YB-01.png"
+            alt="Инжиниринг и проекты" />
+          <div>
+            <p class="brand__title">Инжиниринг и проекты</p>
+            <p class="brand__subtitle">Износостойкие листы из Европы с доставкой до склада в России</p>
+          </div>
+        </div>
+        <div class="header-contacts">
+          <div>
+            <p class="label">Почта для заявок</p>
+            <a href="mailto:zakaz@hard-met.ru" class="link">zakaz@hard-met.ru</a>
+          </div>
+          <div>
+            <p class="label">Отдел продаж</p>
+            <a href="tel:+74991130068" class="link">+7 (499) 113-00-68</a>
+          </div>
+          <button class="button" data-modal-open="callback">Обратный звонок</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Листы в наличии и под заказ!</p>
+            <h1>Износостойкие листы в наличии на складе в РФ и Европе</h1>
+            <p class="hero__subtitle">По цене от 96 000 ₽ за лист.</p>
+            <div class="hero__badges">
+              <span>Наличие на складе в РФ и Европе</span>
+              <span>Быстрая доставка до вашего склада или объекта</span>
+              <span>Лучшая цена за 1 лист и скидки от объема</span>
+            </div>
+            <div class="hero__actions">
+              <button class="button button--dark" data-modal-open="price">Получить прайс-лист</button>
+              <a class="button button--ghost" href="#stock">Посмотреть позиции</a>
+            </div>
+          </div>
+          <div class="hero__card">
+            <h2>Получите файл с позициями на складе</h2>
+            <p>Отправим актуальные остатки и действующие скидки.</p>
+            <form class="form" data-form="stock">
+              <label>
+                Введите ваш e-mail:
+                <input type="email" name="email" placeholder="mail@mail.ru" required />
+              </label>
+              <label>
+                Введите ваши контакты:
+                <input type="tel" name="phone" placeholder="+7 (***) ***-**-**" required />
+              </label>
+              <button class="button" type="submit">Получить остаток на складе</button>
+              <p class="form__note">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных.</p>
+              <p class="form__success" data-success hidden>Спасибо! Менеджер свяжется с вами в ближайшее время.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="stock">
+        <div class="container">
+          <h2>Популярные позиции у нас на складе</h2>
+          <div class="stock-grid">
+            <article class="stock-card">
+              <img
+                src="https://static.tildacdn.com/tild3231-3864-4533-a663-626662363737/hardox-500-plates-50.jpg"
+                alt="Износостойкие листы" />
+              <div>
+                <h3>Лист Hardox 450 10мм 2000×6000</h3>
+                <p>Полные аналоги: Hardox, Dillidur, Sidur, Raex, Relia.</p>
+              </div>
+            </article>
+            <article class="stock-card">
+              <img
+                src="https://static.tildacdn.com/tild6264-6461-4361-b661-356231343663/XAR.jpg"
+                alt="Износостойкие листы" />
+              <div>
+                <h3>Лист Hardox 450 12мм 2000×6000</h3>
+                <p>По запросу подберем аналоги и рассчитаем поставку.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="advantages">
+        <div class="container">
+          <h2>Почему выбирают нас</h2>
+          <div class="advantages">
+            <div>
+              <h3>Склад в РФ и Европе</h3>
+              <p>Держим основные толщины в наличии, помогаем подобрать замену.</p>
+            </div>
+            <div>
+              <h3>Логистика под ключ</h3>
+              <p>Доставка до объекта, таможенное оформление и контроль сроков.</p>
+            </div>
+            <div>
+              <h3>Прозрачное предложение</h3>
+              <p>Готовим индивидуальный расчет и скидки за объем.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="request">
+        <div class="container request-grid">
+          <div>
+            <h2>Получите актуальную цену</h2>
+            <p>
+              Оставьте параметры листа, и мы подготовим предложение с учетом сроков и объема.
+            </p>
+          </div>
+          <form class="form form--inline" data-form="request">
+            <label>
+              Позиция и количество
+              <textarea
+                name="details"
+                rows="4"
+                placeholder="Например: Hardox 450 12мм 2000×6000 — 10 листов"
+                required></textarea>
+            </label>
+            <label>
+              Контактный e-mail
+              <input type="email" name="email" placeholder="mail@mail.ru" required />
+            </label>
+            <label>
+              Телефон
+              <input type="tel" name="phone" placeholder="+7 (***) ***-**-**" required />
+            </label>
+            <button class="button" type="submit">Запросить цену</button>
+            <p class="form__note">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных.</p>
+            <p class="form__success" data-success hidden>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer__title">Инжиниринг и проекты</p>
+          <p>Износостойкие листы и аналоги Hardox с поставкой по РФ.</p>
+        </div>
+        <div>
+          <p class="label">Почта</p>
+          <a href="mailto:zakaz@hard-met.ru" class="link">zakaz@hard-met.ru</a>
+        </div>
+        <div>
+          <p class="label">Телефон</p>
+          <a href="tel:+74991130068" class="link">+7 (499) 113-00-68</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" data-modal="callback" aria-hidden="true">
+      <div class="modal__backdrop" data-modal-close></div>
+      <div class="modal__content" role="dialog" aria-modal="true">
+        <button class="modal__close" data-modal-close aria-label="Закрыть">×</button>
+        <h2>Закажите обратный звонок</h2>
+        <p>Наш менеджер проведет консультацию и поможет подобрать лист.</p>
+        <form class="form" data-form="callback">
+          <label>
+            Ваше имя
+            <input type="text" name="name" placeholder="Иван" required />
+          </label>
+          <label>
+            Телефон
+            <input type="tel" name="phone" placeholder="+7 (***) ***-**-**" required />
+          </label>
+          <button class="button" type="submit">Заказать звонок</button>
+          <p class="form__note">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных.</p>
+          <p class="form__success" data-success hidden>Спасибо! Мы скоро свяжемся с вами.</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" data-modal="price" aria-hidden="true">
+      <div class="modal__backdrop" data-modal-close></div>
+      <div class="modal__content" role="dialog" aria-modal="true">
+        <button class="modal__close" data-modal-close aria-label="Закрыть">×</button>
+        <h2>Прайс-лист на износостойкие листы</h2>
+        <p>Оставьте контакты — пришлем актуальные цены со склада.</p>
+        <form class="form" data-form="price">
+          <label>
+            E-mail
+            <input type="email" name="email" placeholder="mail@mail.ru" required />
+          </label>
+          <label>
+            Телефон
+            <input type="tel" name="phone" placeholder="+7 (***) ***-**-**" required />
+          </label>
+          <button class="button" type="submit">Получить прайс-лист</button>
+          <p class="form__note">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных.</p>
+          <p class="form__success" data-success hidden>Спасибо! Мы отправим прайс на ваш e-mail.</p>
+        </form>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
