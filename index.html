@@ -125,28 +125,219 @@
         </div>
       </section>
 
-      <section class="section" id="stock">
+      <section class="section section--tabs" id="grades">
         <div class="container">
-          <h2>Популярные позиции у нас на складе</h2>
-          <div class="stock-grid">
-            <article class="stock-card">
-              <img
-                src="https://static.tildacdn.com/tild3231-3864-4533-a663-626662363737/hardox-500-plates-50.jpg"
-                alt="Износостойкие листы" />
-              <div>
-                <h3>Лист Hardox 450 10мм 2000×6000</h3>
-                <p>Полные аналоги: Hardox, Dillidur, Sidur, Raex, Relia.</p>
+          <h2>Какие стали мы можем предложить:</h2>
+          <div class="tabs" role="tablist" aria-label="Марки сталей">
+            <button class="tabs__tab" data-tab="dillidur" role="tab">Dillidur</button>
+            <button class="tabs__tab" data-tab="sidur" role="tab">Sidur</button>
+            <button class="tabs__tab is-active" data-tab="hardox" role="tab">Hardox</button>
+            <button class="tabs__tab" data-tab="magstrong" role="tab">Magstrong</button>
+            <button class="tabs__tab" data-tab="nm" role="tab">NM</button>
+            <button class="tabs__tab" data-tab="other" role="tab">Другие марки</button>
+          </div>
+
+          <div class="tabs-panels">
+            <div class="tabs-panel" data-panel="dillidur">
+              <div class="product-grid">
+                <div class="product-info">
+                  <h3>Dillidur</h3>
+                  <dl class="product-specs">
+                    <div>
+                      <dt>Страна производитель:</dt>
+                      <dd>Германия</dd>
+                    </div>
+                    <div>
+                      <dt>Твёрдость, HBW:</dt>
+                      <dd>370-610</dd>
+                    </div>
+                    <div>
+                      <dt>Толщина:</dt>
+                      <dd>от 6 мм до 150 мм</dd>
+                    </div>
+                    <div>
+                      <dt>Стандартный размер:</dt>
+                      <dd>3500мм х &gt;6000мм</dd>
+                    </div>
+                  </dl>
+                  <button class="button">Проверить наличие</button>
+                </div>
+                <div class="product-visual">
+                  <img
+                    src="https://static.tildacdn.com/tild6536-3865-4336-a562-626362313334/shutterstock_1374672.jpg"
+                    alt="Листы Dillidur" />
+                  <span class="product-pin product-pin--one">+</span>
+                  <span class="product-pin product-pin--two">+</span>
+                  <span class="product-pin product-pin--three">+</span>
+                </div>
               </div>
-            </article>
-            <article class="stock-card">
-              <img
-                src="https://static.tildacdn.com/tild6264-6461-4361-b661-356231343663/XAR.jpg"
-                alt="Износостойкие листы" />
-              <div>
-                <h3>Лист Hardox 450 12мм 2000×6000</h3>
-                <p>По запросу подберем аналоги и рассчитаем поставку.</p>
+            </div>
+
+            <div class="tabs-panel" data-panel="sidur">
+              <div class="product-grid">
+                <div class="product-info">
+                  <h3>Sidur</h3>
+                  <dl class="product-specs">
+                    <div>
+                      <dt>Страна производитель:</dt>
+                      <dd>Словения</dd>
+                    </div>
+                    <div>
+                      <dt>Твёрдость, HBW:</dt>
+                      <dd>360 - 540</dd>
+                    </div>
+                    <div>
+                      <dt>Толщина:</dt>
+                      <dd>от 8 мм до 110 мм</dd>
+                    </div>
+                    <div>
+                      <dt>Стандартный размер:</dt>
+                      <dd>2000мм х 6000мм</dd>
+                    </div>
+                  </dl>
+                  <button class="button">Проверить наличие</button>
+                </div>
+                <div class="product-visual">
+                  <img
+                    src="https://static.tildacdn.com/tild6536-3865-4336-a562-626362313334/shutterstock_1374672.jpg"
+                    alt="Листы Sidur" />
+                  <span class="product-pin product-pin--one">+</span>
+                  <span class="product-pin product-pin--two">+</span>
+                  <span class="product-pin product-pin--three">+</span>
+                </div>
               </div>
-            </article>
+            </div>
+
+            <div class="tabs-panel is-active" data-panel="hardox">
+              <div class="product-grid">
+                <div class="product-info">
+                  <h3>Hardox</h3>
+                  <p class="product-variants">HiTuf | 400 | 450 | 500 | 550 | 600 | Extreme | HiTemp</p>
+                  <dl class="product-specs">
+                    <div>
+                      <dt>Страна производитель:</dt>
+                      <dd>Швеция</dd>
+                    </div>
+                    <div>
+                      <dt>Твёрдость, HBW:</dt>
+                      <dd>310-700</dd>
+                    </div>
+                    <div>
+                      <dt>Толщина:</dt>
+                      <dd>от 2 мм до 160 мм</dd>
+                    </div>
+                    <div>
+                      <dt>Стандартный размер:</dt>
+                      <dd>2000мм х 6000мм</dd>
+                    </div>
+                  </dl>
+                  <button class="button">Проверить наличие</button>
+                </div>
+                <div class="product-visual">
+                  <img
+                    src="https://static.tildacdn.com/tild6536-3865-4336-a562-626362313334/shutterstock_1374672.jpg"
+                    alt="Листы Hardox" />
+                  <span class="product-pin product-pin--one">+</span>
+                  <span class="product-pin product-pin--two">+</span>
+                  <span class="product-pin product-pin--three">+</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tabs-panel" data-panel="magstrong">
+              <div class="product-grid">
+                <div class="product-info">
+                  <h3>Magstrong</h3>
+                  <dl class="product-specs">
+                    <div>
+                      <dt>Страна производитель:</dt>
+                      <dd>Россия</dd>
+                    </div>
+                    <div>
+                      <dt>Твёрдость, HBW:</dt>
+                      <dd>310-505</dd>
+                    </div>
+                    <div>
+                      <dt>Толщина:</dt>
+                      <dd>от 8 мм до 50 мм</dd>
+                    </div>
+                    <div>
+                      <dt>Стандартный размер:</dt>
+                      <dd>2000мм х 6000мм</dd>
+                    </div>
+                  </dl>
+                  <button class="button">Проверить наличие</button>
+                </div>
+                <div class="product-visual">
+                  <img
+                    src="https://static.tildacdn.com/tild6536-3865-4336-a562-626362313334/shutterstock_1374672.jpg"
+                    alt="Листы Magstrong" />
+                  <span class="product-pin product-pin--one">+</span>
+                  <span class="product-pin product-pin--two">+</span>
+                  <span class="product-pin product-pin--three">+</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tabs-panel" data-panel="nm">
+              <div class="product-grid">
+                <div class="product-info">
+                  <h3>NM</h3>
+                  <dl class="product-specs">
+                    <div>
+                      <dt>Страна производитель:</dt>
+                      <dd>Китай</dd>
+                    </div>
+                    <div>
+                      <dt>Твёрдость, HBW:</dt>
+                      <dd>320 - 540</dd>
+                    </div>
+                    <div>
+                      <dt>Толщина:</dt>
+                      <dd>от 2 мм до 300 мм</dd>
+                    </div>
+                    <div>
+                      <dt>Стандартный размер:</dt>
+                      <dd>2000мм х 6000мм</dd>
+                    </div>
+                  </dl>
+                  <button class="button">Проверить наличие</button>
+                </div>
+                <div class="product-visual">
+                  <img
+                    src="https://static.tildacdn.com/tild6536-3865-4336-a562-626362313334/shutterstock_1374672.jpg"
+                    alt="Листы NM" />
+                  <span class="product-pin product-pin--one">+</span>
+                  <span class="product-pin product-pin--two">+</span>
+                  <span class="product-pin product-pin--three">+</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tabs-panel" data-panel="other">
+              <div class="product-grid">
+                <div class="product-info">
+                  <h3>Другие марки</h3>
+                  <p>
+                    Подберем аналоги под ваш проект и подготовим предложение под нужную твердость и
+                    толщину.
+                  </p>
+                  <ul class="product-list">
+                    <li>Полные аналоги: Hardox, Dillidur, Sidur, Raex, Relia.</li>
+                    <li>Подбор толщин, раскроя и логистики под объект.</li>
+                  </ul>
+                  <button class="button">Проверить наличие</button>
+                </div>
+                <div class="product-visual">
+                  <img
+                    src="https://static.tildacdn.com/tild6536-3865-4336-a562-626362313334/shutterstock_1374672.jpg"
+                    alt="Другие марки стали" />
+                  <span class="product-pin product-pin--one">+</span>
+                  <span class="product-pin product-pin--two">+</span>
+                  <span class="product-pin product-pin--three">+</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

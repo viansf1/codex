@@ -47,3 +47,21 @@ forms.forEach((form) => {
     form.reset();
   });
 });
+
+const tabButtons = document.querySelectorAll(".tabs__tab");
+const tabPanels = document.querySelectorAll(".tabs-panel");
+
+const setActiveTab = (tabName) => {
+  tabButtons.forEach((tab) => {
+    tab.classList.toggle("is-active", tab.dataset.tab === tabName);
+  });
+  tabPanels.forEach((panel) => {
+    panel.classList.toggle("is-active", panel.dataset.panel === tabName);
+  });
+};
+
+tabButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    setActiveTab(button.dataset.tab);
+  });
+});
