@@ -16,20 +16,47 @@
           <img
             class="brand__logo"
             src="https://static.tildacdn.com/tild3731-6266-4539-b265-613965383135/LogoEP_YB-01.png"
-            alt="Инжиниринг и проекты" />
+            alt="Engineering Projects" />
           <div>
-            <p class="brand__title">Инжиниринг и проекты</p>
+            <p class="brand__title">Engineering Projects</p>
             <p class="brand__subtitle">Износостойкие листы из Европы с доставкой до склада в России</p>
           </div>
         </div>
         <div class="header-contacts">
-          <div>
-            <p class="label">Почта для заявок</p>
-            <a href="mailto:zakaz@hard-met.ru" class="link">zakaz@hard-met.ru</a>
+          <div class="header-contacts__item">
+            <span class="header-contacts__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path
+                  d="M4 6.5h16a1.5 1.5 0 0 1 1.5 1.5v8a1.5 1.5 0 0 1-1.5 1.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5" />
+                <path
+                  d="m3.5 8 8.2 5.2c.2.1.4.1.6 0L20.5 8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5" />
+              </svg>
+            </span>
+            <div>
+              <p class="label">Почта для заявок</p>
+              <a href="mailto:zakaz@hard-met.ru" class="link">zakaz@hard-met.ru</a>
+            </div>
           </div>
-          <div>
-            <p class="label">Отдел продаж</p>
-            <a href="tel:+74991130068" class="link">+7 (499) 113-00-68</a>
+          <div class="header-contacts__item">
+            <span class="header-contacts__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path
+                  d="M6.5 3.5h2.2c.6 0 1.1.4 1.2 1l.5 2.6a1.2 1.2 0 0 1-.4 1.1l-1.4 1.1a12 12 0 0 0 6.2 6.2l1.1-1.4a1.2 1.2 0 0 1 1.1-.4l2.6.5c.6.1 1 .6 1 1.2v2.2c0 .7-.5 1.2-1.2 1.3-8 .8-14.4-5.6-13.6-13.6.1-.7.6-1.2 1.3-1.2Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5" />
+              </svg>
+            </span>
+            <div>
+              <p class="label">Отдел продаж</p>
+              <a href="tel:+74991130068" class="link">+7 (499) 113-00-68</a>
+            </div>
           </div>
           <button class="button" data-modal-open="callback">Обратный звонок</button>
         </div>
@@ -39,36 +66,61 @@
     <main>
       <section class="hero">
         <div class="container hero-grid">
-          <div>
-            <p class="eyebrow">Листы в наличии и под заказ!</p>
+          <div class="hero__info">
+            <p class="eyebrow"><span>Листы в наличии и под заказ!</span></p>
             <h1>Износостойкие листы в наличии на складе в РФ и Европе</h1>
             <p class="hero__subtitle">По цене от 96 000 ₽ за лист.</p>
-            <div class="hero__badges">
-              <span>Наличие на складе в РФ и Европе</span>
-              <span>Быстрая доставка до вашего склада или объекта</span>
-              <span>Лучшая цена за 1 лист и скидки от объема</span>
+            <div class="hero__features">
+              <div class="hero__feature">
+                <span class="hero__feature-icon" aria-hidden="true">🚚</span>
+                <span>Быстрая доставка до вашего склада или объекта</span>
+              </div>
+              <div class="hero__feature">
+                <span class="hero__feature-icon" aria-hidden="true">📦</span>
+                <span>Наличие на складе в РФ и Европе</span>
+              </div>
+              <div class="hero__feature">
+                <span class="hero__feature-icon" aria-hidden="true">💰</span>
+                <span>Лучшая цена за 1 лист и скидки от объема</span>
+              </div>
             </div>
             <div class="hero__actions">
               <button class="button button--dark" data-modal-open="price">Получить прайс-лист</button>
               <a class="button button--ghost" href="#stock">Посмотреть позиции</a>
             </div>
           </div>
-          <div class="hero__card">
-            <h2>Получите файл с позициями на складе</h2>
-            <p>Отправим актуальные остатки и действующие скидки.</p>
-            <form class="form" data-form="stock">
-              <label>
-                Введите ваш e-mail:
-                <input type="email" name="email" placeholder="mail@mail.ru" required />
-              </label>
-              <label>
-                Введите ваши контакты:
-                <input type="tel" name="phone" placeholder="+7 (***) ***-**-**" required />
-              </label>
-              <button class="button" type="submit">Получить остаток на складе</button>
-              <p class="form__note">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных.</p>
-              <p class="form__success" data-success hidden>Спасибо! Менеджер свяжется с вами в ближайшее время.</p>
-            </form>
+          <div class="hero__visual">
+            <div class="hero__badge">Акционное предложение на складе!</div>
+            <div class="hero__card hero__card--promo">
+              <h2>
+                Получите прайс-лист на износостойкие листы
+                <span class="highlight">со склада</span>
+              </h2>
+              <form class="form form--compact" data-form="stock">
+                <label>
+                  Введите e-mail для получения:
+                  <input type="email" name="email" placeholder="mail@mail.ru" required />
+                </label>
+                <label>
+                  Введите Ваш номер телефона:
+                  <input type="tel" name="phone" placeholder="+7 (000) 000-00-00" required />
+                </label>
+                <button class="button" type="submit">Получить прайс-лист</button>
+                <p class="form__note">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных.</p>
+                <p class="form__success" data-success hidden>
+                  Спасибо! Менеджер свяжется с вами в ближайшее время.
+                </p>
+              </form>
+            </div>
+            <div class="hero__art" aria-hidden="true">
+              <div class="hero__circle"></div>
+              <div class="hero__stack">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

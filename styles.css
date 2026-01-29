@@ -58,7 +58,7 @@ a {
 }
 
 .brand__logo {
-  width: 140px;
+  width: 120px;
   height: auto;
 }
 
@@ -79,6 +79,27 @@ a {
   gap: 18px;
   flex-wrap: wrap;
   justify-content: flex-end;
+}
+
+.header-contacts__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-contacts__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #e2e2e2;
+  display: grid;
+  place-items: center;
+  color: #2d2e2e;
+}
+
+.header-contacts__icon svg {
+  width: 18px;
+  height: 18px;
 }
 
 .label {
@@ -115,13 +136,13 @@ a {
 }
 
 .button--ghost {
-  border: 1px solid #cfcfcf;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   background: transparent;
-  color: #111;
+  color: #fff;
 }
 
 .hero {
-  background: linear-gradient(rgba(45, 46, 46, 0.82), rgba(45, 46, 46, 0.9)),
+  background: linear-gradient(rgba(45, 46, 46, 0.75), rgba(45, 46, 46, 0.9)),
     url("https://static.tildacdn.com/tild3937-3039-4337-a138-666539346539/depositphotos_283138.jpg")
       center/cover no-repeat;
   color: #fff;
@@ -142,6 +163,15 @@ a {
   margin-bottom: 12px;
 }
 
+.eyebrow span {
+  display: inline-block;
+  background: var(--yellow);
+  color: #000;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
 .hero h1 {
   font-size: clamp(2rem, 4vw, 2.8rem);
   margin: 0 0 10px;
@@ -153,17 +183,28 @@ a {
   color: #f0f0f0;
 }
 
-.hero__badges {
+.hero__features {
   display: grid;
-  gap: 12px;
+  gap: 16px;
   margin-bottom: 24px;
 }
 
-.hero__badges span {
-  background: rgba(255, 255, 255, 0.12);
-  padding: 10px 16px;
-  border-radius: 12px;
+.hero__feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-size: 0.95rem;
+}
+
+.hero__feature-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: #000;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
 }
 
 .hero__actions {
@@ -172,12 +213,73 @@ a {
   gap: 14px;
 }
 
+.hero__visual {
+  position: relative;
+  display: grid;
+  gap: 16px;
+}
+
+.hero__badge {
+  display: inline-block;
+  background: var(--yellow);
+  color: #000;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 12px;
+  width: fit-content;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .hero__card {
   background: #fff;
   color: var(--text);
   padding: 24px;
   border-radius: 18px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.hero__card--promo h2 {
+  margin-top: 0;
+}
+
+.highlight {
+  background: var(--yellow);
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+.hero__art {
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  width: 240px;
+  height: 240px;
+}
+
+.hero__circle {
+  position: absolute;
+  inset: 0;
+  background: var(--yellow);
+  border-radius: 50%;
+}
+
+.hero__stack {
+  position: absolute;
+  inset: 40px 30px;
+  display: grid;
+  gap: 8px;
+}
+
+.hero__stack span {
+  display: block;
+  height: 28px;
+  background: linear-gradient(135deg, #e7f5f7, #9fd3db);
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.form--compact label {
+  font-size: 0.9rem;
 }
 
 .section {
@@ -338,6 +440,13 @@ a {
 @media (max-width: 720px) {
   .header-contacts {
     justify-content: flex-start;
+  }
+
+  .hero__art {
+    position: static;
+    width: 180px;
+    height: 180px;
+    margin-left: auto;
   }
 
   .stock-card {
